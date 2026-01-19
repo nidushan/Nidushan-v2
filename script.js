@@ -166,4 +166,40 @@ document.addEventListener('DOMContentLoaded', function () {
       window.location.href = buildMailTo({ to, subject, body });
     });
   }
+
+  // TEST FORM
+  const testForm = document.getElementById('testForm');
+  if (testForm) {
+    const testSubmitBtn = testForm.querySelector('button[type="submit"]');
+    testForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(testForm);
+      // Ensure access_key is set (using .set to avoid duplicates if hidden input exists)
+      formData.set("access_key", "d02a84a9-d797-47a1-acff-cf3f23f0948d");
+
+      const originalText = testSubmitBtn.textContent;
+      testSubmitBtn.textContent = "Sending...";
+      testSubmitBtn.disabled = true;
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+        const data = await response.json();
+        if (response.ok) {
+          alert("Success! Your message has been sent.");
+          testForm.reset();
+        } else {
+          alert("Error: " + data.message);
+        }
+      } catch (error) {
+        alert("Something went wrong. Please try again.");
+      } finally {
+        testSubmitBtn.textContent = originalText;
+        testSubmitBtn.disabled = false;
+      }
+    });
+  }
 });

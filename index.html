@@ -269,6 +269,18 @@
             <button type="button" id="mailtoFallback" class="btn">Open email client</button>
           </div>
         </form>
+
+        <!-- Secondary Test Form -->
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+          <h3>Test Form</h3>
+          <form id="testForm" action="https://api.web3forms.com/submit" method="POST" style="display:flex; flex-direction:column; gap:10px; max-width:400px;">
+            <input type="hidden" name="access_key" value="d02a84a9-d797-47a1-acff-cf3f23f0948d">
+            <input type="text" name="name" required placeholder="Name">
+            <input type="email" name="email" required placeholder="Email">
+            <textarea name="message" required placeholder="Message"></textarea>
+            <button type="submit" class="btn">Submit Form</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
