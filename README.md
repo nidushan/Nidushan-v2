@@ -20,12 +20,4 @@ Customizations
 - Add an email contact link or a small contact form if you want direct outreach.
 - If you prefer a lighter theme, adjust CSS variables in `styles.css` (`--bg`, `--accent`, etc.)
 
-Notes
-- Links point to your public GitHub profile and LinkedIn; if you want server-side or dynamic features I can add a contact form or CMS integration.
-- Kept dependencies to zero for speed and simplicity.
-
-If you'd like, I can:
-- Produce a version as a single-file HTML (inline CSS/JS) for maximum portability.
-- Add a downloadable vCard, resume link, or an animated intro.
-- Convert to a small static site generator template (11ty / Hugo) for easier content maintenance.
 ```
