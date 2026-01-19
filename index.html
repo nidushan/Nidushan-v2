@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jan N. Sinnadurai</title>
+  <meta name="description" content="Jan — Computer Engineer. Selected projects and ways to contact INFINITY CROWN." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="LarsJ.png" />
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <a class="brand" href="#top">
+        <img src="LarsJ.png" alt="Jan — logo" class="logo" />
+        <div class="brand-text">
+          <span class="name">Jan N. Sinnadurai</span>
+          <span class="subtitle">Computer Engineer · Ex Shopify</span>
+        </div>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+      <nav id="siteNav" class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="https://github.com/nidushan" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="https://linkedin.com/in/nidushan/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-left">
+          <h1>I turn ideas into working products: practical, reliable, and easy to use.</h1>
+          <p class="lead"></p>
+  
+          <p class="short">
+            I work across development, testing and systems improvements at INFINITY CROWN INC. I solve problems at the intersection of engineering and user experience. I focus on clean builds, thoughtful QA and steady improvements.
+          </p>
+  
+          <div class="ctas">
+            <a class="btn primary" href="https://infinitycrown.no" target="_blank" rel="noopener">For Scandinavia — infinitycrown.no <span class="flag">🇳🇴🇸🇪🇩🇰</span></a>
+            <a class="btn" href="https://infinitycrown.ca" target="_blank" rel="noopener">For North America — infinitycrown.ca <span class="flag">🇨🇦🇺🇸</span></a>
+          </div>
+  
+          <ul class="info-list">
+            <li><strong>Focus areas</strong> — user experience, scalable systems, practical product engineering</li>
+            <li><strong>Education</strong> — Computer Engineering (Software), Toronto Metropolitan University</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected projects</h2>
+        <p class="muted">Public repositories and notable forks. Tap a card to open the GitHub repo.</p>
+  
+        <div class="controls">
+          <input id="projectFilter" type="search" placeholder="Filter projects by name or language" aria-label="Filter projects" />
+        </div>
+  
+        <div id="projectsGrid" class="projects-grid" aria-live="polite">
+          <!-- project cards -->
+          <a class="project-card" href="https://github.com/nidushan/yjit-metrics" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>yjit-metrics</h3>
+              <span class="lang lang-ruby">Ruby</span>
+            </div>
+            <p class="desc">Tasks for benchmarking, building and collecting stats for YJIT.</p>
+            <div class="meta-row">
+              <span class="meta">Forked from Shopify/yjit-metrics</span>
+              <span class="meta">MIT</span>
+              <span class="meta">Sep 17, 2022</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/hydrogen" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>hydrogen</h3>
+              <span class="lang lang-ts">TypeScript</span>
+            </div>
+            <p class="desc">React-based framework for building Shopify-powered storefronts (fork).</p>
+            <div class="meta-row">
+              <span class="meta">Forked from Shopify/hydrogen-v1</span>
+              <span class="meta">MIT</span>
+              <span class="meta">Sep 17, 2022</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/Discord-ID" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>Discord-ID</h3>
+              <span class="lang lang-vue">Vue</span>
+            </div>
+            <p class="desc">Lookup utilities for Discord IDs and profiles.</p>
+            <div class="meta-row">
+              <span class="meta">Forked from LookupGuru/WEB</span>
+              <span class="meta">GPL v3</span>
+              <span class="meta">May 11, 2022</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/React-app" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>React-app</h3>
+              <span class="lang lang-html">HTML</span>
+            </div>
+            <p class="desc">Small React experiments and demos.</p>
+            <div class="meta-row">
+              <span class="meta">Public repo</span>
+              <span class="meta">Mar 2, 2022</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/Social-media-dashboard" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>Social-media-dashboard</h3>
+              <span class="lang lang-html">HTML</span>
+            </div>
+            <p class="desc">Dashboard layouts and analytics UI work.</p>
+            <div class="meta-row">
+              <span class="meta">Public repo</span>
+              <span class="meta">Mar 2, 2022</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/TaskbarX" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>TaskbarX</h3>
+              <span class="lang lang-vb">VB.NET</span>
+            </div>
+            <p class="desc">Center Windows taskbar icons with animations (fork).</p>
+            <div class="meta-row">
+              <span class="meta">Forked from ChrisAnd1998/TaskbarX</span>
+              <span class="meta">MIT</span>
+              <span class="meta">Dec 5, 2020</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/Minecraft-Autoclicker" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>Minecraft-Autoclicker</h3>
+              <span class="lang lang-csharp">C#</span>
+            </div>
+            <p class="desc">Simple auto clicker utilities.</p>
+            <div class="meta-row">
+              <span class="meta">Public repo</span>
+              <span class="meta">Jul 2, 2020</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/YoutubePokedex" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>YoutubePokedex</h3>
+              <span class="lang lang-js">JavaScript</span>
+            </div>
+            <p class="desc">React + Material UI Pokedex series (fork).</p>
+            <div class="meta-row">
+              <span class="meta">Forked from AtotheY/YoutubePokedex</span>
+              <span class="meta">May 7, 2020</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/react-weather-1" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>react-weather-1</h3>
+              <span class="lang lang-ts">TypeScript</span>
+            </div>
+            <p class="desc">Weather app that shows current conditions and forecast (fork).</p>
+            <div class="meta-row">
+              <span class="meta">Forked from aXenDeveloper/react-weather</span>
+              <span class="meta">GPL v3</span>
+              <span class="meta">Aug 2, 2023</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/SteamID-Display" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>SteamID-Display</h3>
+              <span class="lang lang-js">JavaScript</span>
+            </div>
+            <p class="desc">Small display utility for Steam IDs and user info.</p>
+            <div class="meta-row">
+              <span class="meta">Public repo</span>
+              <span class="meta">Feb 16, 2024</span>
+            </div>
+          </a>
+  
+          <a class="project-card" href="https://github.com/nidushan/wedding-seating-chart-main" target="_blank" rel="noopener">
+            <div class="card-head">
+              <h3>wedding-seating-chart-main</h3>
+              <span class="lang lang-ts">TypeScript</span>
+            </div>
+            <p class="desc">Interactive seating chart UI for events.</p>
+            <div class="meta-row">
+              <span class="meta">Public repo</span>
+              <span class="meta">Mar 12, 2025</span>
+            </div>
+          </a>
+  
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">For business inquiries please reach out through INFINITY CROWN INC. Choose your market below and send a short message.</p>
+  
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Scandinavia</h3>
+            <p><span class="flag">🇳🇴 🇸🇪 🇩🇰</span> <a href="https://infinitycrown.no" target="_blank" rel="noopener">infinitycrown.no</a></p>
+          </div>
+  
+          <div class="contact-card">
+            <h3>North America</h3>
+            <p><span class="flag">🇨🇦 🇺🇸</span> <a href="https://infinitycrown.ca" target="_blank" rel="noopener">infinitycrown.ca</a></p>
+          </div>
+  
+          <div class="contact-card">
+            <h3>Social & Code</h3>
+            <p><a href="https://github.com/nidushan" target="_blank" rel="noopener">GitHub</a> • <a href="https://www.linkedin.com/in/nidushan/" target="_blank" rel="noopener">LinkedIn</a></p>
+          </div>
+        </div>
+  
+        <form id="contactForm" class="contact-form" aria-label="Contact form">
+          <input type="hidden" name="access_key" value="62c7d8c0-335b-4536-a711-214889a33d21" />
+          <input type="hidden" name="subject" value="New Contact Form Submission" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+  
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+  
+          <div class="form-row">
+            <label for="region">Market / Region</label>
+            <select id="region" name="region" required>
+              <option value="scandinavia">🇳🇴 Norway • 🇸🇪 Sweden • 🇩🇰 Denmark — infinitycrown.no</option>
+              <option value="northamerica">🇨🇦 Canada • 🇺🇸 USA — infinitycrown.ca</option>
+              <option value="other">Other / International</option>
+            </select>
+          </div>
+  
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or question"></textarea>
+          </div>
+  
+          <div id="formMessage" class="form-message"></div>
+
+          <div class="h-captcha" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" data-theme="dark"></div>
+
+          <div class="form-actions">
+            <button type="submit" id="submitBtn" class="btn primary">Send message</button>
+            <button type="button" id="mailtoFallback" class="btn">Open email client</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-left">
+        <small>© Copyright INFINITY CROWN INC | All Rights Reserved</small>
+      </div>
+      <div class="footer-right">
+        Based in Stavanger, Norway & Toronto, Canada
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
