@@ -111,13 +111,14 @@ main > section:nth-child(even) {
 .meta-row{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:0.88rem}
 
 /* Language colors (approx GitHub colors) */
-.lang-ruby{background:#701516}
-.lang-ts{background:#2b7489}
-.lang-vue{background:#41b883}
-.lang-html{background:#e34c26}
-.lang-vb{background:#854CC7}
-.lang-csharp{background:#178600}
-.lang-js{background:#f1e05a;color:#07202a}
+/* Refined to compliment dark navy (#0f1720 / #07202a) */
+.lang-ruby{background:#B83E46} /* Muted Crimson */
+.lang-ts{background:#387CC8}   /* Soft Steel Blue */
+.lang-vue{background:#3BA776}  /* Matte Mint */
+.lang-html{background:#D65A31} /* Terra Cotta Orange */
+.lang-vb{background:#804FB3}   /* Deep Lavender */
+.lang-csharp{background:#308A3C} /* Forest Green */
+.lang-js{background:#F5D44D;color:#07202a} /* Warm Gold */
 
 /* Controls */
 .controls{margin-top:12px;margin-bottom:6px}
