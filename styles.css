@@ -111,14 +111,13 @@ main > section:nth-child(even) {
 .meta-row{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:0.88rem}
 
 /* Language colors */
-/* Refined to compliment dark navy (#0f1720 / #07202a) */
-.lang-ruby{background:#B83E46} /* Muted Crimson */
-.lang-ts{background:#387CC8}   /* Soft Steel Blue */
-.lang-vue{background:#3BA776}  /* Matte Mint */
-.lang-html{background:#D65A31} /* Terra Cotta Orange */
-.lang-vb{background:#804FB3}   /* Deep Lavender */
-.lang-csharp{background:#308A3C} /* Forest Green */
-.lang-js{background:#F5D44D;color:#07202a} /* Warm Gold */
+.lang-ruby{background:#CD4E59}       /* Muted Red */
+.lang-ts{background:#387CC8}         /* Soft Steel Blue (Reference) */
+.lang-vue{background:#33B37B}        /* Matte Mint Green */
+.lang-html{background:#D67949}       /* Burnt Orange */
+.lang-vb{background:#9B63CC}         /* Soft Purple */
+.lang-csharp{background:#3FA63F}     /* Balanced Forest Green */
+.lang-js{background:#E0C852;color:#07202a} /* Warm Muted Gold */
 
 /* Controls */
 .controls{margin-top:12px;margin-bottom:6px}
