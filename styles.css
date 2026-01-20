@@ -110,7 +110,7 @@ main > section:nth-child(even) {
 .desc{margin:8px 0;color:var(--muted);font-size:0.95rem}
 .meta-row{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:0.88rem}
 
-/* Language colors (approx GitHub colors) */
+/* Language colors */
 /* Refined to compliment dark navy (#0f1720 / #07202a) */
 .lang-ruby{background:#B83E46} /* Muted Crimson */
 .lang-ts{background:#387CC8}   /* Soft Steel Blue */
