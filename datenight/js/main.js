@@ -66,7 +66,7 @@ if (doParticles) {
   }
 
   // Set up the initial countdown with the default date (2025-06-18)
-  const defaultDate = Date.UTC(2026, 2, 20); // March is month 2 (0-indexed)
+  const defaultDate = Date.UTC(2026, 2, 20, 21); // March is month 2 (0-indexed)
   startCountdown(defaultDate);
 
   // Add an event listener to the date input to update the countdown when the date changes
