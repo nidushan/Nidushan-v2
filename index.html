@@ -24,11 +24,13 @@
       </button>
 
       <nav id="siteNav" class="nav" aria-label="Main">
-        <a href="#">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a class="pill" href="https://github.com/nidushan" target="_blank" rel="noopener">GitHub</a>
-        <a class="pill" href="https://linkedin.com/in/nidushan/" target="_blank" rel="noopener">LinkedIn</a>
+        <a data-i18n="navAbout" href="#">About</a>
+        <a data-i18n="navProjects" href="#projects">Projects</a>
+        <a data-i18n="navContact" href="#contact">Contact</a>
+        <button id="langToggle" class="pill lang-pill" type="button" aria-pressed="false" aria-label="Switch language to Norwegian">
+          <img id="langToggleIcon" class="lang-icon" src="https://flagpedia.net/data/flags/emoji/twitter/256x256/no.png" alt="" aria-hidden="true" />
+          <span class="lang-toggle-label" data-i18n="langToggleLabel">Norsk</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -37,21 +39,21 @@
     <section class="hero">
       <div class="container">
         <div class="hero-left">
-          <h1>I turn ideas into working products: practical, reliable, and easy to use.</h1>
-          <p class="lead"></p>
+          <h1 data-i18n="heroTitle">I turn ideas into working products: practical, reliable, and easy to use.</h1>
+          <p class="lead" data-i18n="heroLead"></p>
   
-          <p class="short">
+          <p class="short" data-i18n="heroShort">
             I work across development, testing and systems improvements at INFINITY CROWN INC. I solve problems at the intersection of engineering and user experience. I focus on clean builds, thoughtful QA and steady improvements.
           </p>
   
           <div class="ctas">
-            <a class="btn primary" href="https://infinitycrown.no" target="_blank" rel="noopener">For Scandinavia — infinitycrown.no <span class="flag">🇳🇴🇸🇪🇩🇰</span></a>
-            <a class="btn" href="https://infinitycrown.ca" target="_blank" rel="noopener">For North America — infinitycrown.ca <span class="flag">🇨🇦🇺🇸</span></a>
+            <a id="ctaScandinavia" class="btn primary" href="https://infinitycrown.no" target="_blank" rel="noopener" data-i18n="ctaScandinavia">For Scandinavia — infinitycrown.no <span class="flag">🇳🇴🇸🇪🇩🇰</span></a>
+            <a id="ctaNorthAmerica" class="btn" href="https://infinitycrown.ca" target="_blank" rel="noopener" data-i18n="ctaNorthAmerica">For North America — infinitycrown.ca <span class="flag">🇨🇦🇺🇸</span></a>
           </div>
   
           <ul class="info-list">
-            <li><strong>Focus areas</strong> — user experience, scalable systems, practical product engineering</li>
-            <li><strong>Education</strong> — Computer Engineering (Software), Toronto Metropolitan University</li>
+            <li data-i18n="focusAreas"><strong>Focus areas</strong> — user experience, scalable systems, practical product engineering</li>
+            <li data-i18n="education"><strong>Education</strong> — Computer Engineering (Software), Toronto Metropolitan University</li>
           </ul>
         </div>
       </div>
@@ -59,11 +61,12 @@
 
     <section id="projects" class="section">
       <div class="container">
-        <h2>Selected projects</h2>
-        <p class="muted">Public repositories and notable forks. Tap a card to open the GitHub repo.</p>
+        <h2 data-i18n="projectsTitle">Selected projects</h2>
+        <p class="muted" data-i18n="projectsSubtitle">Public repositories and notable forks. Tap a card to open the GitHub repo.</p>
   
         <div class="controls">
-          <input id="projectFilter" type="search" placeholder="Filter projects by name or language" aria-label="Filter projects" />
+          <input id="projectFilter" data-i18n="projectFilterPlaceholder" type="search" placeholder="Filter projects by name or language" aria-label="Filter projects" />
+          <button id="viewAllProjectsBtn" class="btn secondary view-all-btn" type="button" aria-expanded="false" data-i18n="viewAllLabel">View all projects</button>
         </div>
   
         <div id="projectsGrid" class="projects-grid" aria-live="polite">
@@ -211,23 +214,23 @@
 
     <section id="contact" class="section">
       <div class="container">
-        <h2>Contact</h2>
-        <p class="muted">For business inquiries please reach out through INFINITY CROWN INC. Choose your market below and send a short message.</p>
+        <h2 data-i18n="contactTitle">Contact information</h2>
+        <p class="muted" data-i18n="contactSubtitle">For business inquiries please reach out through INFINITY CROWN INC. Choose your market below and send a short message.</p>
   
         <div class="contact-grid">
           <div class="contact-card">
-            <h3>Scandinavia</h3>
-            <p><span class="flag">🇳🇴 🇸🇪 🇩🇰</span> <a href="https://web.infinitycrown.no/pages/contact" target="_blank" rel="noopener">infinitycrown.no</a></p>
+            <h3 data-i18n="contactCardScandinaviaTitle">Scandinavia</h3>
+            <p data-i18n="contactCardScandinaviaText"><span class="flag">🇳🇴 🇸🇪 🇩🇰</span> <a href="https://web.infinitycrown.no/pages/contact" target="_blank" rel="noopener">infinitycrown.no</a></p>
           </div>
-  
+
           <div class="contact-card">
-            <h3>North America</h3>
-            <p><span class="flag">🇨🇦 🇺🇸</span> <a href="https://web.infinitycrown.ca/pages/contact" target="_blank" rel="noopener">infinitycrown.ca</a></p>
+            <h3 data-i18n="contactCardNorthAmericaTitle">North America</h3>
+            <p data-i18n="contactCardNorthAmericaText"><span class="flag">🇨🇦 🇺🇸</span> <a href="https://web.infinitycrown.ca/pages/contact" target="_blank" rel="noopener">infinitycrown.ca</a></p>
           </div>
-  
+
           <div class="contact-card">
-            <h3>Social & Code</h3>
-            <p><a href="https://github.com/nidushan" target="_blank" rel="noopener">GitHub</a> • <a href="https://linkedin.com/in/nidushan/" target="_blank" rel="noopener">LinkedIn</a></p>
+            <h3 data-i18n="contactCardSocialTitle">Social & Code</h3>
+            <p data-i18n="contactCardSocialText"><a href="https://github.com/nidushan" target="_blank" rel="noopener">GitHub</a> • <a href="https://linkedin.com/in/nidushan/" target="_blank" rel="noopener">LinkedIn</a></p>
           </div>
         </div>
         <!-- Test Form 
@@ -290,11 +293,9 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <div class="footer-left">
-        <small>© Copyright INFINITY CROWN INC | All Rights Reserved</small>
+        <small data-i18n="footerCopyright">© Copyright INFINITY CROWN INC | All Rights Reserved</small>
       </div>
-      <div class="footer-right">
-        Based in Stavanger, Norway & Toronto, Canada
-      </div>
+      <div class="footer-right" data-i18n="footerLocation">Based in Toronto, Canada</div>
     </div>
   </footer>
 

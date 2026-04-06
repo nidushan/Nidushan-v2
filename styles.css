@@ -67,8 +67,13 @@ a:hover {
 
 /* Nav */
 .nav{display:flex;gap:10px;align-items:center}
-.nav a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600;font-size:0.95rem}
+.nav a,
+.nav button{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600;font-size:0.95rem;background:transparent;border:none}
 .pill{background:rgba(208,183,122,0.12);color:var(--accent)}
+button.pill{font:inherit;cursor:pointer}
+.lang-pill{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.lang-icon{width:20px;height:20px;border-radius:5px;object-fit:cover;display:none}
+.lang-toggle-label{display:inline-block}
 .nav-toggle{display:none;background:transparent;border:0;color:var(--text)}
 
 /* Sections */
@@ -96,6 +101,11 @@ main > section:nth-child(even) {
 .btn.primary{background:linear-gradient(90deg,var(--accent), #ccb46a);color:#07202a;border:0;box-shadow:var(--shadow)}
 .flag{display:none} /* hidden by default (desktop) */
 
+/* Language toggle flag icon only on desktop */
+@media (min-width: 721px) {
+  .lang-icon{display:inline-block}
+}
+
 /* Info */
 .info-list{list-style:none;padding:0;margin:8px 0 0 0;color:var(--muted)}
 .info-list li{padding:6px 0}
@@ -120,8 +130,11 @@ main > section:nth-child(even) {
 .lang-js{background:#E0C852;color:#07202a} /* Warm Muted Gold */
 
 /* Controls */
-.controls{margin-top:12px;margin-bottom:6px}
-.controls input[type="search"]{width:100%;max-width:420px;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.01);color:var(--text)}
+.controls{margin-top:12px;margin-bottom:6px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.controls input[type="search"]{flex:1 1 260px;min-width:0;width:100%;max-width:420px;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.01);color:var(--text)}
+.btn.secondary{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:var(--text)}
+.view-all-btn{display:none}
+.project-card.collapsed-hidden{display:none !important}
 
 /* Contact */
 .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
@@ -182,6 +195,7 @@ textarea{resize:vertical;min-height:110px}
 
   /* show unicode flag glyphs on small screens */
   .flag{display:inline-block;margin-left:8px}
+  .view-all-btn{display:inline-flex}
 
   /* For the select: when mobile we want emoji versions; JS will set option text accordingly */
 }
