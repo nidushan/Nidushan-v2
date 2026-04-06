@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     no: {
       navAbout: 'Om',
       navProjects: 'Prosjekter',
-      navContact: 'Kontakt informasjon',
+      navContact: 'Kontakt',
       langToggleLabel: 'English',
       langToggleIcon: 'https://flagpedia.net/data/flags/emoji/twitter/256x256/ca.png',
       langToggleAria: 'Switch language to English',
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
       projectFilterPlaceholder: 'Filtrer prosjekter etter navn eller språk',
       viewAllLabel: 'Vis alle prosjekter',
       viewLessLabel: 'Vis færre',
-      contactTitle: 'Kontakt',
+      contactTitle: 'Kontakt informasjon',
       contactSubtitle: 'For forretningshenvendelser, ta kontakt via INFINITY CROWN AS. Velg marked og send en kort melding.',
       contactCardScandinaviaTitle: 'Skandinavia',
       contactCardScandinaviaText: '<span class="flag">🇳🇴 🇸🇪 🇩🇰</span> <a href="https://web.infinitycrown.no/pages/contact" target="_blank" rel="noopener">infinitycrown.no</a>',
